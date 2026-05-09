@@ -1,0 +1,28 @@
+{
+  "system": [
+    "imagegen",
+    "openai-docs",
+    "plugin-creator",
+    "skill-creator",
+    "skill-installer"
+  ],
+  "custom": [
+    "academic-search-workflow",
+    "doc",
+    "ieee-literature-workflow",
+    "journal-figure-router",
+    "mineru-document-explorer",
+    "nature-citation",
+    "nature-data",
+    "nature-figure",
+    "nature-paper2ppt",
+    "nature-polishing",
+    "nature-response",
+    "pdf",
+    "playwright",
+    "scientific-figure-making",
+    "speech",
+    "top-tier-figure-router",
+    "transcribe"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "openalex": {
+      "command": "npx",
+      "args": ["-y", "@cyanheads/openalex-mcp-server"],
+      "env": {
+        "OPENALEX_API_KEY": "your-email@example.com"
+      }
+    },
+    "crossref": {
+      "command": "python",
+      "args": ["E:\\mcp\\Crossref-MCP-Server\\crossref_server.py"]
+    }
+  }
+}

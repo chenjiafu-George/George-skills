@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cnki": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/h-lu/cnki-mcp", "cnki-mcp"]
+    }
+  }
+}

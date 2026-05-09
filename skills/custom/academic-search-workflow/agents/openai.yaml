@@ -1,0 +1,7 @@
+interface:
+  display_name: "Academic Search"
+  short_description: "Search and verify scholarly literature"
+  default_prompt: "Use $academic-search-workflow to find recent papers, verify DOI and journal metadata, and return a review-ready shortlist."
+
+policy:
+  allow_implicit_invocation: true

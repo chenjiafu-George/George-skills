@@ -1,0 +1,37 @@
+﻿model_provider = "custom"
+model = "gpt-5.4"
+disable_response_storage = true
+model_reasoning_effort = "medium"
+
+[windows]
+sandbox = "unelevated"
+
+[model_providers.custom]
+name = "custom"
+wire_api = "responses"
+requires_openai_auth = true
+base_url = "http://127.0.0.1:8327/v1"
+
+[projects.'e:\daizuo\5月论文\私有云部署']
+trust_level = "trusted"
+
+[projects.'e:\daizuo\1111']
+trust_level = "trusted"
+
+[projects.'e:\daizuo\图书馆阅读新形态的关键技术架构研究与示范应用']
+trust_level = "trusted"
+
+[projects.'e:\daizuo\5月论文\90304-做程序5.10']
+trust_level = "trusted"
+
+[mcp_servers.openalex]
+url = "https://openalex.caseyjhand.com/mcp"
+
+[mcp_servers.crossref]
+command = "npx"
+args = ["-y", "@botanicastudios/crossref-mcp"]
+
+[mcp_servers.cnki]
+command = 'C:\Users\陈家富\AppData\Local\uv\cache\archive-v0\dT52rSYxEDqBhPDtED5RG\Scripts\python.exe'
+args = ['E:\daizuo\1111\academic-search-workflow\tools\cnki_mcp_local.py']
+env = { CNKI_HEADLESS = '0', CNKI_CHROME_BINARY = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe', CNKI_CHROMEDRIVER_PATH = 'E:\daizuo\1111\.tmp\chromedriver-147\chromedriver-win64\chromedriver.exe', CNKI_CHROME_USER_DATA_DIR = 'E:\daizuo\1111\.tmp\chrome-profile-selenium' }

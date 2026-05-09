@@ -1,0 +1,25 @@
+model_provider = "custom"
+model = "gpt-5.4"
+disable_response_storage = true
+model_reasoning_effort = "medium"
+
+[windows]
+sandbox = "unelevated"
+
+[model_providers.custom]
+name = "custom"
+wire_api = "responses"
+requires_openai_auth = true
+base_url = "http://127.0.0.1:8327/v1"
+
+[mcp_servers.openalex]
+url = "https://openalex.caseyjhand.com/mcp"
+
+[mcp_servers.crossref]
+command = "npx"
+args = ["-y", "@botanicastudios/crossref-mcp"]
+
+[mcp_servers.cnki]
+command = 'C:\\Path\\To\\python.exe'
+args = ['C:\\Path\\To\\George-Skill\\tools\\cnki_mcp_local.py']
+env = { CNKI_HEADLESS = '0', CNKI_CHROME_BINARY = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe', CNKI_CHROMEDRIVER_PATH = 'C:\\Path\\To\\chromedriver.exe', CNKI_CHROME_USER_DATA_DIR = 'C:\\Path\\To\\chrome-profile' }

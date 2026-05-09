@@ -1,0 +1,25 @@
+{
+  "codex": {
+    "config_snapshot": "mcp-config/codex/config.toml",
+    "portable_template": "mcp-config/codex/config.portable.template.toml"
+  },
+  "mcp_servers": {
+    "openalex": {
+      "type": "remote",
+      "entry": "https://openalex.caseyjhand.com/mcp"
+    },
+    "crossref": {
+      "type": "local_command",
+      "entry": "npx -y @botanicastudios/crossref-mcp"
+    },
+    "cnki": {
+      "type": "local_wrapper",
+      "entry": "tools/cnki_mcp_local.py",
+      "notes": [
+        "Requires local Chrome",
+        "Requires matching ChromeDriver",
+        "Requires path updates on a new machine"
+      ]
+    }
+  }
+}
